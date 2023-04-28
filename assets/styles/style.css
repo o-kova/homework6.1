@@ -12,24 +12,73 @@ ul {
   padding: 0;
 }
 
+.container {
+  width: 600px;
+  text-align: center;
+}
+
 .header,
 .main,
 .footer {
   background-color: #e1e1e1;
 }
 
+.header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.main_child {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.header_left {
+  padding: 10px 0 30px;
+}
+
 .left {
   background-color: #fff8e4;
+
+  display: grid;
+  grid-template-rows: 30% 60%;
+}
+
+.section1 {
+  grid-area: s1;
+}
+.section2 {
+  grid-area: s2;
+}
+.section3 {
+  grid-area: s3;
+}
+
+.main_section {
+  display: grid;
+  grid-template-areas: "s1 s2" "s3 s3";
 }
 
 .main_section section {
   background-color: #feebba;
+
+  padding: 10px 30px;
+  margin: 3px 5px;
 }
 
 .right {
   background-color: #deedcc;
-}
 
+  padding: 10px 0 200px;
+}
+.foot {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+}
 .footer_section {
   background-color: #fafafa;
+
+  padding: 15px 5px;
+  margin: 5px;
 }
