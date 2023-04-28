@@ -4,37 +4,39 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/styles/styles.css" />
+    <link rel="stylesheet" href="assets/styles/style.css" />
     <title>Макет грид</title>
   </head>
   <body>
-    <header class="header">
-      <h5>[Шапка страницы]</h5>
-    </header>
-    <main class="main">
-      <div class="main_child">
-        <div class="left">
-          <div id="header_left">
-            <h5>[Основная часть]</h5>
+    <div class="container">
+      <header class="header">
+        <h5>[Шапка страницы]</h5>
+      </header>
+      <main class="main">
+        <div class="main_child">
+          <div class="left">
+            <div class="header_left">
+              <h5>[Основная часть]</h5>
+            </div>
+            <div class="main_section">
+              <section class="section section1"><h5>[Еще1]</h5></section>
+              <section class="section section2"><h5>[Еще2]</h5></section>
+              <section class="section section3"><h5>[Еще3]</h5></section>
+            </div>
           </div>
-          <div class="main_section">
-            <section class="section"><h5>[Еще1]</h5></section>
-            <section class="section"><h5>[Еще2]</h5></section>
-            <section class="section3"><h5>[Еще3]</h5></section>
+          <div class="right">
+            <aside class="aside"><h5>[Боковая область]</h5></aside>
           </div>
         </div>
-        <div class="right">
-          <aside class="aside"><h5>[Боковая область]</h5></aside>
+      </main>
+      <footer class="footer">
+        <div class="foot">
+          <section class="footer_section"><h5>[Секция футера 1]</h5></section>
+          <section class="footer_section"><h5>[Секция футера 2]</h5></section>
+          <section class="footer_section"><h5>[Секция футера 3]</h5></section>
+          <section class="footer_section"><h5>[Секция футера 4]</h5></section>
         </div>
-      </div>
-    </main>
-    <footer class="footer">
-      <div class="foot">
-        <section class="footer_section"><h5>[Секция футера 1]</h5></section>
-        <section class="footer_section"><h5>[Секция футера 2]</h5></section>
-        <section class="footer_section"><h5>[Секция футера 3]</h5></section>
-        <section class="footer_section"><h5>[Секция футера 4]</h5></section>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>
